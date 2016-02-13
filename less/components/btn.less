@@ -1,0 +1,80 @@
+.btn{
+	cursor: pointer;
+	&--menu{
+		display: none;
+		height: 50px;
+		padding-top: 8px;
+		svg{
+			fill:@text;
+			&:hover{
+				fill:@white;
+			}
+		}
+	}
+	&--open-popup{
+		display: block;
+		width: 70px;
+		height: 70px;
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+		z-index: 100;
+		border-radius: 50%;
+		background: @yellow;
+		svg{
+			background: transparent;
+			fill:@text;
+			width: 45px;
+			height:45px;
+			margin-top: 15px;
+			margin-left: 8px;
+		}
+		.counter{
+			display: block;
+			width: 70px;
+			height: 70px;
+			text-align: center;
+			line-height: 70px;
+			position: absolute;
+			font-weight: 700;
+			font-size: 20px;
+			color:@yellow;
+			top: 0;
+			left: 0;
+
+		}
+	}
+	&--close-popup{
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 10px;
+		right:10px;
+		z-index: 50;
+		svg{
+			fill:@text;
+			&:hover{
+				fill:@yellow;
+			}
+		}
+
+	}
+	&--clean-basket{
+		display: block;	
+		height: 50px;
+		float: right;
+		width: 25%;
+		margin-top: 10px;
+		background: @red;
+		border-radius: 3px;
+		color: @white;
+		text-align: center;
+		line-height: 14px;
+		padding-top: 10px;
+		&:hover,
+		&:active{
+			background: darken(@red, 10%);
+		}
+	}
+}
